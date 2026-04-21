@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    margin: 0;
+    gap: 10px;
+    overflow: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1 {
+    margin: 10px 0 0 0;
+    font-weight: bolder;
+}
+
+
+#resize {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#resize:hover {
+    transform: translateY(-3px);
+    background-color: cadetblue;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+
+    width: min(600px, 80vh);
+    height: min(600px, 80vh);
+}
+
+
+.cell {
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+#footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+
+    background-color: #f9f9f9;
+    font-size: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+
+#footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+#footer a:hover {
+    color: #7ecbff;
+}
+
+
+#github-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+    transition: transform 0.2s ease;
+}
+
+#footer a:hover #github-logo {
+    transform: scale(1.1);
+}
